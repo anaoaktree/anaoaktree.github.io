@@ -1,0 +1,114 @@
+
+
+@font-face {
+    font-family: Dilem;
+    src: url(../fonts/Dilem.ttf);
+    font-weight:500;
+}
+
+@font-face {
+    font-family: abc;
+    src: url(../fonts/abc.otf);
+    font-weight:500;
+}
+
+
+body, html { font-size: 100%; padding: 0; margin: 0;}
+
+body {
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	color: black;
+}
+
+
+#header, #lights-off, #projects{
+	width: 100%;
+	text-align: center;
+}
+
+#header{
+	margin-top: 15%;
+	
+}
+
+/*Title*/
+#header h1{
+	font-size: 40px;
+}
+
+/*About*/
+#header p{
+	font-size: 20px;
+	padding-right: 10%;
+	padding-left: 10%;
+
+}
+/*====Project row/col*/
+#projects{
+	margin-top: 10%;
+	margin-bottom: 15%;
+	padding-left:1%;
+	padding-right: 2%;
+}
+/*Make projects square: width same as padding top**/
+.project{
+	float:left;
+	width: 32%;
+	padding-top: 32%;
+	border: 1px solid grey;
+}
+
+.project:hover{
+	background-color:#FF4949;
+}
+
+.project-title{
+	margin-top: -28%;
+	width: 32%;
+	position: absolute;
+	font-size: 20px;
+}
+
+/*Make height and width same size as projects*/
+.circle{
+	position: absolute;
+    width: 100px;
+    height: 100px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%; 
+    background-color: black;
+}
+
+/*====== Buttons =======*/
+
+button{
+	background: black;
+	outline:0;
+	border:0;
+	border:1px solid black;
+	color:white;
+}
+
+/*======LINKS======*/
+a{
+	color: black;
+	text-decoration: none;
+	border-bottom: 2px solid black;
+
+}
+.social-link{
+	font-family: abc;
+	font-size: 20px;
+}
+a:hover{
+	border-bottom-color: #FF4949;
+}
+
+/*=======ICONS=====*/
+.fa{
+	color:#FF4949;
+	font-size: 40px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
