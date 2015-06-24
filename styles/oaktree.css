@@ -117,6 +117,9 @@ a:hover{
 		font-size: 10px;
 	}
 	#project-title{
-		font-size: 40px;
+		font-size: 60px;
+	}
+	.social-link{
+		font-size: 30px;
 	}
 }
