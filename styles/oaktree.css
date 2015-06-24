@@ -52,7 +52,7 @@ body {
 .project{
 	float:left;
 	width: 33.33%;
-	padding-top: 32%;
+	height: 152px;
 }
 
 .project:hover{
@@ -60,9 +60,6 @@ body {
 }
 
 .project-title{
-	margin-top: -28%;
-	width: 33.33%;
-	position: absolute;
 	font-weight: normal;
 	font-size: 25px;
 }
@@ -112,7 +109,7 @@ a:hover{
 	
 }
 
-/* Smartphones (portrait and landscape) ----------- */
+/* Smartphones (portrait and landscape) ----------- 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 	#header h1{
 		font-size: 100px;
@@ -128,3 +125,8 @@ a:hover{
 		font-size: 35px;
 	}
 }
+
+@media only screen and (){
+
+}
+*/
