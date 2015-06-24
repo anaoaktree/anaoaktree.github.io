@@ -97,6 +97,8 @@ a{
 .social-link{
 	font-family: abc;
 	font-size: 20px;
+	margin-left: 2px;
+	margin-right: 2px;
 }
 a:hover{
 	border-bottom-color: #FF4949;
@@ -106,8 +108,7 @@ a:hover{
 .fa{
 	color:#FF4949;
 	font-size: 40px;
-	margin-left: 5px;
-	margin-right: 5px;
+	
 }
 
 /* Smartphones (portrait and landscape) ----------- */
