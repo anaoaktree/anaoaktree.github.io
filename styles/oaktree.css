@@ -45,8 +45,6 @@ body {
 #projects{
 	margin-top: 10%;
 	margin-bottom: 15%;
-	padding-left:1%;
-	padding-right: 2%;
 }
 /*Make projects square: width same as padding top**/
 .project{
