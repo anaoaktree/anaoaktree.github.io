@@ -97,7 +97,7 @@ a{
 }
 .social-link{
 	font-family: abc;
-	font-size: 20px;
+	font-size: 30px;
 }
 a:hover{
 	border-bottom-color: #FF4949;
@@ -106,7 +106,7 @@ a:hover{
 /*=======ICONS=====*/
 .fa{
 	color:#FF4949;
-	font-size: 50px;
-	margin-left: 5%;
-	margin-right: 5%;
+	font-size: 40px;
+	margin-left: 5px;
+	margin-right: 5px;
 }
