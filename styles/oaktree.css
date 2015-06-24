@@ -40,6 +40,7 @@ body {
 	padding-right: 5%;
 	padding-left: 5%;
 
+
 }
 /*====Project row/col*/
 #projects{
@@ -93,7 +94,7 @@ a{
 
 }
 .social-link{
-	font-size: 30px;
+	font-size: 20px;
 }
 a:hover{
 	border-bottom-color: #FF4949;
