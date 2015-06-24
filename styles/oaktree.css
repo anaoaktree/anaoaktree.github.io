@@ -95,6 +95,7 @@ a{
 
 }
 .social-link{
+	font-family: abc;
 	font-size: 20px;
 }
 a:hover{
@@ -121,6 +122,6 @@ a:hover{
 		font-size: 50px;
 	}
 	.social-link{
-		font-size: 30px;
+		font-size: 35px;
 	}
 }
