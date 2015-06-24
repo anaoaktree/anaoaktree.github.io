@@ -49,9 +49,8 @@ body {
 /*Make projects square: width same as padding top**/
 .project{
 	float:left;
-	width: 33,33%;
+	width: 33.33%;
 	padding-top: 32%;
-	border: 1px solid grey;
 }
 
 .project:hover{
