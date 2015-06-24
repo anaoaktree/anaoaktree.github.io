@@ -31,12 +31,12 @@ body {
 
 /*Title*/
 #header h1{
-	font-size: 50px;
+	font-size: 100px;
 }
 
 /*About*/
 #header p{
-	font-size: 15px;
+	font-size: 2px;
 	padding-right: 5%;
 	padding-left: 5%;
 
