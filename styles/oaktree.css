@@ -1,5 +1,3 @@
-
-
 @font-face {
     font-family: Dilem;
     src: url(../fonts/Dilem.ttf);
@@ -38,9 +36,9 @@ body {
 
 /*About*/
 #header p{
-	font-size: 20px;
-	padding-right: 10%;
-	padding-left: 10%;
+	font-size: 15px;
+	padding-right: 5%;
+	padding-left: 5%;
 
 }
 /*====Project row/col*/
