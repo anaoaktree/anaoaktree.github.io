@@ -51,7 +51,7 @@ body {
 /*Make projects square: width same as padding top**/
 .project{
 	float:left;
-	width: 32%;
+	width: 33.33%;
 	padding-top: 32%;
 	border: 1px solid grey;
 }
@@ -62,7 +62,7 @@ body {
 
 .project-title{
 	margin-top: -28%;
-	width: 32%;
+	width: 30%;
 	position: absolute;
 	font-size: 30px;
 }
