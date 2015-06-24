@@ -36,10 +36,10 @@ body {
 
 /*About*/
 #about{
-	font-size: 22px;
+	font-size: 18px;
 	padding-right: 5%;
 	padding-left: 5%;
-	margin-bottom: 10%;
+	margin-bottom: 5%;
 
 
 }
@@ -119,6 +119,8 @@ a:hover{
 	}
 	#about{
 		font-size: 12px;
+		margin-bottom: 0;
+
 	}
 	.project-title{
 		font-size: 50px;
