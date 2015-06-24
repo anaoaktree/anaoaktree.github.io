@@ -27,7 +27,6 @@ function showDescription(event){
 function hideDescription(event){
 	visElemEvent(event,"project-description","hidden");
 	visElemEvent(event,"project-title","visible");
-
 }
 
 
