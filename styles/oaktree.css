@@ -116,8 +116,8 @@ a:hover{
 	#about{
 		font-size: 15px;
 	}
-	#project-title{
-		font-size: 100px;
+	.project-title{
+		font-size: 30px;
 	}
 	.social-link{
 		font-size: 30px;
