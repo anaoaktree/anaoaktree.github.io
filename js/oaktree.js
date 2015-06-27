@@ -15,22 +15,16 @@ function showSmartyPants(){
 	smpants.innerHTML="hello";
 }
 
-function visElemEvent(event,classname,vis){
-	event.target.getElementsByClassName(classname)[0].style.visibility=vis;
-}
-
 function showDescription(event){
-	visElemEvent(event,"project-title","hidden");
-	visElemEvent(event,"project-description","visible");
+	event.target.getElementsByClassName("project-title")[0].classList.add("offscreen");
+	event.target.getElementsByClassName("project-description")[0].classList.remove("offscreen");
 }
 
 function hideDescription(event){
-	visElemEvent(event,"project-description","hidden");
-	visElemEvent(event,"project-title","visible");
+	event.target.getElementsByClassName("project-description")[0].classList.add("offscreen");
+	event.target.getElementsByClassName("project-title")[0].classList.remove("offscreen");
+	
 }
-
-
-
 
 
 //=============== initialize
@@ -38,7 +32,7 @@ window.onload=function(){
 	//Hides project descriptions
 	var descr = document.getElementsByClassName("project-description");
 	for (var i =0; i<descr.length;i++){
-		descr[i].style.visibility="hidden";
+		descr[i].classList.add("offscreen");
 	}
 	var projects = document.getElementsByClassName("project");
 	for (var i =0; i<projects.length;i++){
