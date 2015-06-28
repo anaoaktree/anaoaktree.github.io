@@ -11,7 +11,7 @@
 }
 
 
-body, html { font-size: 100%; padding: 0; margin: 0;}
+body, html { font-size: 100%; padding: 0; margin: 0; width: 100%; height: 100%}
 
 body {
 	font-family: 'Lato', Calibri, Arial, sans-serif;
@@ -24,13 +24,11 @@ body {
 	text-align: center;
 }
 
-#header{
-	margin-top: 10%;
-	
-}
-
 /*Title*/
 #header h1{
+	padding-top: 20px;
+	padding-bottom: 10px;
+	margin-bottom: 0;
 	font-size: 80px;
 }
 
@@ -39,20 +37,21 @@ body {
 	font-size: 18px;
 	padding-right: 5%;
 	padding-left: 5%;
-	margin-bottom: 3%;
+	padding-bottom: 10px;
 
 
 }
 /*====Project row/col*/
 section{
-	margin-top: 10%;
-	margin-bottom: 15%;
+	padding-top:20px;
+	min-height:100%;
+    min-height:calc(100% - 0);
 }
 /*Make projects square: width same as padding top**/
 .project{
-	float:left;
-	width: 33.33%;
-	height: 152px;
+	float: left;
+	width: 100%;
+	min-height: 100px;
 }
 
 /*Projects back color*/
@@ -86,10 +85,12 @@ button{
 }
 
 /*======LINKS======*/
+.no-padding{padding: 0! important;}
+
 nav li {
     display: inline;
-    margin-left: 2px;
-	margin-right: 2px;
+    padding-left: 2px;
+	padding-right: 2px;
  }
 
 a{
@@ -114,26 +115,6 @@ a:hover{
 	
 }
 
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-	#header h1{
-		font-size: 100px;
-	}
-	#about{
-		font-size: 12px;
-
-	}
-	.project{
-		height: 200px;
-	}
-	.project-title{
-		font-size: 50px;
-	}
-	nav li a{
-		font-size: 35px;
-	}
-}
-
 .offscreen
 {
 position: absolute;
@@ -145,3 +126,23 @@ height: 1px;
 width: 1px;
 overflow: hidden;
 }
+
+/*===MEDIA QUERIES*/
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 668px) { 
+.project{
+	width: 50%;
+}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+.project{
+	width: 33.33%;
+}
+ }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { ... }
