@@ -155,7 +155,7 @@ overflow: hidden;
 
 /*===MEDIA QUERIES*/
 /*Really small devices*/
-@media screen and ( max-height: 440px ){
+@media screen and ( max-height: 456px ){
 #header h1{
 	font-size: 60px;
 }	
