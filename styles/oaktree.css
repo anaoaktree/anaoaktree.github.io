@@ -134,7 +134,10 @@ a:hover{
 .v-center {
         position: absolute;
 		top: 50%;
+		-ms-transform:translateY(-50%);
 		-webkit-transform:translateY(-50%);
+		-moz-transform:translateY(-50%);
+		-o-transform:translateY(-50%);
 		transform: translateY(-50%);
     }
 
@@ -161,8 +164,11 @@ overflow: hidden;
 	.v-center {
         position: relative;
 		top: 0;
-		-webkit-transform: -webkit-translateY(0);
-		transform: translateY(0);
+		-ms-transform:translateY(0);
+		-webkit-transform:translateY(0);
+		-moz-transform:translateY(0);
+		-o-transform:translateY(0);
+		transform:translateY(0);
     }
     #projlink{
     	visibility: hidden;
