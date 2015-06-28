@@ -161,7 +161,7 @@ overflow: hidden;
 	padding-bottom: 10px;
 }}
 
-@media screen and ( min-height: 683px ){
+@media screen and ( min-height: 683px ) , (min-width: 668px ){
 	
 	section{
 		padding-top: 50px;
