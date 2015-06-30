@@ -62,9 +62,29 @@ section{
 	float: left;
 	width: 100%;
 	min-height: 100px;
+
 }
 
 /*Projects back color*/
+#smartypants{
+	background-color: red;
+}
+#insptrees{
+	background-color: yellow;
+}
+
+#archie{
+	background-color: blue;
+}
+#artist{
+	background-color: green;
+}
+#eptrees{
+	background-color: brown;
+}
+#comingsoon{
+	background-color: grey;
+}
 
 .project-title{
 	font-family: Helsinki;
@@ -156,17 +176,24 @@ overflow: hidden;
 }	
 #about{
 	font-size: 18px;
-	padding-right: 5%;
-	padding-left: 5%;
+	padding-right: 2%;
+	padding-left: 2%;
 	padding-bottom: 10px;
 }}
 
-@media screen and ( min-height: 683px ) , (min-width: 668px ){
-	
+@media screen and ( min-height: 683px ){
 	section{
-		padding-top: 50px;
+		position: absolute;
+		height: 50%;
+		padding-top: 5%;
 		min-height: 1px;
 	}
+	#intro{
+		top:0;}
+	#projects{top:40%;}
+	
+	
+
 	.v-center {
         position: relative;
 		top: 0;
@@ -177,15 +204,22 @@ overflow: hidden;
 		transform:translateY(0);
     }
     #projlink{
+    	height: 0px;
     	visibility: hidden;
     }
 }
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 668px) { 
+#projects{
+	width: 90%;
+	margin-left: 5%;
+	
+}
+
 .project{
 	width: 50%;
-	min-height: 100px;
+	min-height: 33.33%;
 }
 
 #about{
@@ -196,9 +230,17 @@ overflow: hidden;
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
+#projects{
+	width: 86%;
+	margin-left: 7%;
+	
+}
 
 .project{
+	height: 200px;
 	width: 33.33%;
+	min-height: 50%;
+	
 }
 #about{
 	padding-right: 15%;
