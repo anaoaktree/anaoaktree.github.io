@@ -183,13 +183,10 @@ overflow: hidden;
 @media screen and ( min-height: 683px ){
 	section{
 		position: absolute;
-		height: 36%;
-		margin-top: 7%;
+		height: 50%;
 		min-height: 1px;
 	}
-	#intro{
-
-		top:0;}
+	#intro{	top:0;}
 	#projects{top:40%;}
 	
 	
@@ -214,7 +211,6 @@ overflow: hidden;
 #projects{
 	width: 90%;
 	margin-left: 5%;
-	
 }
 
 .project{
