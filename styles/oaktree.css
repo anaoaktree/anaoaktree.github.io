@@ -72,20 +72,20 @@ section{
 }
 /*Projects back color*/
 #smartypants{
-	background-color: red;
+	background-color: #FFEF00;
 }
 #insptrees{
-	background-color: yellow;
+	background-color: #FFD300;
 }
 
 #archie{
-	background-color: blue;
+	background-color: #FEDF00;
 }
 #eptrees{
-	background-color: green;
+	background-color: #FFFF66;
 }
 #comingsoon{
-	background-color: grey;
+	background-color: #FCE883;
 }
 
 .project-title{
