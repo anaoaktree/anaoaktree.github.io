@@ -64,7 +64,12 @@ section{
 	min-height: 100px;
 
 }
+.project-description p{
+	padding-left: 2%;
+	padding-right: 2%;
+	font-weight: bold;
 
+}
 /*Projects back color*/
 #smartypants{
 	background-color: red;
@@ -76,11 +81,8 @@ section{
 #archie{
 	background-color: blue;
 }
-#artist{
-	background-color: green;
-}
 #eptrees{
-	background-color: brown;
+	background-color: green;
 }
 #comingsoon{
 	background-color: grey;
