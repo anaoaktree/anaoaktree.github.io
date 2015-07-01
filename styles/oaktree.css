@@ -52,17 +52,17 @@ section{
 }
 
 
-.division{
-	padding-left: 2px;
-	border-top: 1px solid black;
+#projects{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
 }
 
 /*Make projects square: width same as padding top**/
 .project{
-	float: left;
-	width: 100%;
-	min-height: 100px;
-
+	flex-grow: 1;
+	min-height: 50px;
 }
 .project-description p{
 	padding-left: 2%;
@@ -170,8 +170,7 @@ width: 1px;
 overflow: hidden;
 }
 
-/*===MEDIA QUERIES*/
-/*Really small devices*/
+/*===MEDIA QUERIES
 @media screen and ( min-height: 456px ){
 #header h1{
 	font-size: 70px;
@@ -208,8 +207,6 @@ overflow: hidden;
     }
 }
 
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 668px) { 
 #projects{
 	width: 90%;
 	margin-left: 5%;
@@ -226,7 +223,7 @@ overflow: hidden;
 }
 }
 
-/* Medium devices (desktops, 992px and up) */
+/* Medium devices (desktops, 992px and up) 
 @media (min-width: 992px) { 
 #projects{
 	width: 86%;
@@ -246,5 +243,6 @@ overflow: hidden;
 }
  }
 
-/* Large devices (large desktops, 1200px and up) */
 @media (min-width: @screen-lg-min) { ... }
+
+*/
