@@ -58,6 +58,11 @@ section{
 	flex-direction: column;
 	justify-content: center;
 }
+#project{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction:column;
+}
 
 /*Make projects square: width same as padding top**/
 .project{
@@ -190,8 +195,6 @@ overflow: hidden;
 	#intro{	top:0;}
 	#projects{top:40%;}
 	
-	
-
 	.v-center {
         position: relative;
 		top: 0;
@@ -211,11 +214,9 @@ overflow: hidden;
 	width: 90%;
 	margin-left: 5%;
 }
+@media (min-width: 668px) { 
+#projects{flex-direction:row;}
 
-.project{
-	width: 50%;
-	min-height: 33.33%;
-}
 
 #about{
 	padding-right: 10%;
@@ -225,24 +226,12 @@ overflow: hidden;
 
 /* Medium devices (desktops, 992px and up) 
 @media (min-width: 992px) { 
-#projects{
-	width: 86%;
-	margin-left: 7%;
-	
-}
 
-.project{
-	height: 200px;
-	width: 33.33%;
-	min-height: 50%;
-	
-}
 #about{
 	padding-right: 15%;
 	padding-left: 15%;
 }
  }
-
 @media (min-width: @screen-lg-min) { ... }
 
 */
