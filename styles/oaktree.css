@@ -70,8 +70,6 @@ section{
 	min-height: 50px;
 }
 .project-description p{
-	padding-left: 2%;
-	padding-right: 2%;
 	font-weight: bold;
 
 }
@@ -109,7 +107,7 @@ section{
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%; 
-    background-color: black;
+    background-color: white;
 }
 
 /*====== Buttons =======*/
@@ -175,7 +173,7 @@ width: 1px;
 overflow: hidden;
 }
 
-/*===MEDIA QUERIES
+/*===MEDIA QUERIES*/
 @media screen and ( min-height: 456px ){
 #header h1{
 	font-size: 70px;
@@ -188,13 +186,18 @@ overflow: hidden;
 
 @media screen and ( min-height: 683px ){
 	section{
-		position: absolute;
-		height: 50%;
+		height: 40%;
 		min-height: 1px;
 	}
-	#intro{	top:0;}
-	#projects{top:40%;}
-	
+	#header{
+		padding-top: 5%;
+	}
+	#projects{
+		height: 60%;
+	}
+	.project{
+	}
+
 	.v-center {
         position: relative;
 		top: 0;
@@ -210,12 +213,15 @@ overflow: hidden;
     }
 }
 
-#projects{
-	width: 90%;
-	margin-left: 5%;
-}
+
 @media (min-width: 668px) { 
-#projects{flex-direction:row;}
+#projects{
+		height: 60%;
+		flex-direction:row;}
+
+	.project{
+		min-width: 40%;
+	}
 
 
 #about{
@@ -224,9 +230,11 @@ overflow: hidden;
 }
 }
 
-/* Medium devices (desktops, 992px and up) 
+/* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-
+.project{
+		min-width: 33%;
+	}
 #about{
 	padding-right: 15%;
 	padding-left: 15%;
@@ -234,4 +242,4 @@ overflow: hidden;
  }
 @media (min-width: @screen-lg-min) { ... }
 
-*/
+
