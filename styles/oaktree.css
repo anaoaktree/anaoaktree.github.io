@@ -58,11 +58,6 @@ section{
 	flex-direction: column;
 	justify-content: center;
 }
-#project{
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction:column;
-}
 
 /*Make projects square: width same as padding top**/
 .project{
