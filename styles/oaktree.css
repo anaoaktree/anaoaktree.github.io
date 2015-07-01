@@ -216,8 +216,8 @@ overflow: hidden;
 
 @media (min-width: 668px) { 
 #projects{
-		height: 60%;
-		flex-direction:row;}
+		flex-direction:row;
+	}
 
 	.project{
 		min-width: 40%;
@@ -232,14 +232,14 @@ overflow: hidden;
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-.project{
-		min-width: 33%;
-	}
+#projects{}
+.project{min-width: 33%;}
+
 #about{
 	padding-right: 15%;
 	padding-left: 15%;
+	}
 }
- }
 @media (min-width: @screen-lg-min) { ... }
 
 
