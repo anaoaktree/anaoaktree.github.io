@@ -30,17 +30,19 @@ function hideDescription(event){
 //=============== initialize
 window.onload=function(){
 	//Hides project descriptions
+	
 	var descr = document.getElementsByClassName("project-description");
 	for (var i =0; i<descr.length;i++){
 		descr[i].classList.add("offscreen");
 	}
+	/*
 	var projects = document.getElementsByClassName("project");
 	for (var i =0; i<projects.length;i++){
 		projects[i].addEventListener("mouseenter", showDescription);
 		projects[i].addEventListener("mouseleave", hideDescription);
 
 	}
-
+	*/
 	//light.addEventListener("click",lightSwitch);
 	//smpants.addEventListener("mouseover", showSmartyPants);
 
