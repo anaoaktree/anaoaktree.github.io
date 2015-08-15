@@ -16,13 +16,13 @@ function showSmartyPants(){
 }
 
 function showDescription(event){
-	event.target.getElementsByClassName("project-title")[0].classList.add("offscreen");
-	event.target.getElementsByClassName("project-description")[0].classList.remove("offscreen");
+	event.target.getElementsByClassName("project-title")[0].style.visibility="hidden";
+	event.target.getElementsByClassName("project-description")[0].style.visibility="visible";
 }
 
 function hideDescription(event){
-	event.target.getElementsByClassName("project-description")[0].classList.add("offscreen");
-	event.target.getElementsByClassName("project-title")[0].classList.remove("offscreen");
+	event.target.getElementsByClassName("project-description")[0].style.visibility="hidden";
+	event.target.getElementsByClassName("project-title")[0].style.visibility="visible";
 	
 }
 
@@ -30,19 +30,19 @@ function hideDescription(event){
 //=============== initialize
 window.onload=function(){
 	//Hides project descriptions
-	
-	var descr = document.getElementsByClassName("project-description");
-	for (var i =0; i<descr.length;i++){
-		descr[i].classList.add("offscreen");
-	}
-	/*
+		
 	var projects = document.getElementsByClassName("project");
 	for (var i =0; i<projects.length;i++){
-		projects[i].addEventListener("mouseenter", showDescription);
-		projects[i].addEventListener("mouseleave", hideDescription);
+		projects[i].addEventListener("mouseenter", function(){
+			this.getElementsByClassName("project-description")[0].style.visibility="visible";
+		});
+		projects[i].addEventListener("mouseleave", function(){
+			this.getElementsByClassName("project-description")[0].style.visibility="hidden";
+		}
+			);
 
 	}
-	*/
+
 	//light.addEventListener("click",lightSwitch);
 	//smpants.addEventListener("mouseover", showSmartyPants);
 

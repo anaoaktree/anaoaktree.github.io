@@ -65,9 +65,11 @@ section{
 	min-height: 50px;
 }
 
+.project-description{
+	visibility: hidden;
+}
+
 .project-description p{
-	margin:0;
-	display: inline-block;
 	font-weight: bold;
 
 }
@@ -206,13 +208,21 @@ overflow: hidden;
 
 
 @media (min-width: 668px) { 
+
 #projects{
 		flex-direction:row;
 	}
 
 	.project{
-		min-width: 40%;
+		position: relative;
+		width: 40%;
+
 	}
+
+
+.project-description{
+	position: relative;
+}
 
 
 #about{
@@ -223,7 +233,11 @@ overflow: hidden;
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-#projects{}
+#projects{
+width: 80%;
+margin-left: 10%;
+justify-content: space-around;
+}
 .project{min-width: 30%;}
 
 #about{
