@@ -34,10 +34,6 @@ body {
 
 
 /*Title*/
-
-#header{
-	padding-top: 8%;
-}
 #header h1{
 	font-family: Helsinki;
 	margin: 0;
@@ -46,20 +42,8 @@ body {
 
 /*About*/
 #about{
-	font-family: Dilem;
-	font-weight: bold;
+	font-size: 16px;
 
-	font-size: 26px;
-	color: gray;
-
-}
-
-.bold{
-	font-weight: bolder;
-}
-
-.blue{
-	color: blue;
 }
 /*====Project row/col*/
 section{
@@ -68,6 +52,73 @@ section{
 }
 
 
+#projects{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+}
+
+/*Make projects square: width same as padding top**/
+.project{
+	flex-grow: 1;
+	min-height: 50px;
+}
+
+.project-description{
+	visibility: hidden;
+}
+
+.project-description p{
+	font-weight: bold;
+
+}
+/*Projects back color*/
+#smartypants{
+	background-color: #FFEF00;
+}
+#insptrees{
+	background-color: #FFD300;
+}
+
+#archie{
+	background-color: #FEDF00;
+}
+#eptrees{
+	background-color: #FFFF66;
+}
+#comingsoon{
+	background-color: #FCE883;
+}
+
+.project-title{
+	font-family: Helsinki;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+
+
+/*Make height and width same size as projects*/
+.circle{
+	position: absolute;
+    width: 100px;
+    height: 100px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%; 
+    background-color: white;
+}
+
+/*====== Buttons =======*/
+
+button{
+	background: black;
+	outline:0;
+	border:0;
+	border:1px solid black;
+	color:white;
+}
 
 /*======LINKS======*/
 .no-padding{padding: 0! important;}
@@ -123,13 +174,58 @@ overflow: hidden;
 }
 
 /*===MEDIA QUERIES*/
+@media screen and ( min-height: 456px ){
+#header h1{
+	font-size: 70px;
+}	
+#about{
+	font-size: 18px;
+	padding-right: 2%;
+	padding-left: 2%;
+}}
+
+@media screen and ( min-height: 683px ){
+	section{
+		height: 40%;
+		min-height: 1px;
+	}
+	#header{padding-top: 5%;}
+	#projects{height: 60%;}
+	.v-center {
+        position: absolute;
+		top: 0;
+		-ms-transform:translateY(0);
+		-webkit-transform:translateY(0);
+		-moz-transform:translateY(0);
+		-o-transform:translateY(0);
+		transform:translateY(0);
+    }
+    #projlink{
+    	height: 0px;
+    	visibility: hidden;
+    }
+}
+
 
 @media (min-width: 668px) { 
 
+#projects{
+		flex-direction:row;
+	}
+
+	.project{
+		position: relative;
+		width: 30%;
+
+	}
+
+
+.project-description{
+	position: relative;
+}
+
 
 #about{
-	font-size: 36px;
-
 	padding-right: 10%;
 	padding-left: 10%;
 }
@@ -139,8 +235,6 @@ overflow: hidden;
 @media (min-width: 992px) { 
 
 #about{
-	font-size: 42px;
-
 	padding-right: 15%;
 	padding-left: 15%;
 	}
