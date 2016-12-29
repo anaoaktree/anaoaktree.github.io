@@ -9,8 +9,14 @@
 }
 
 .social-link a:hover{
-  color: #0ADCD5;
+  color: #FBDF57;
 }
 
+.page-title {
+    padding: 10px 0;
+}
 
-
+.heading-border {
+    width: 70px;
+    margin: 10px 0;
+}
